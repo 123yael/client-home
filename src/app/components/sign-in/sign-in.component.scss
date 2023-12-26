@@ -1,8 +1,75 @@
 @import '../../../styles.scss';
+@import '../../../assets/bootstrap.min.css';
 
-.card {
-    border: 1px solid $black-color;
-    padding: 10px;
-    margin: 10px;
-    background-color: $pink-color;
+$width-circle: 130;
+
+.sign-in {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(90deg, $brown-color, $pink-color, $yellow-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.form-display {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: $white-color;
+}
+
+.example-full-width {
+    width: 100%;
+}
+
+
+
+.my-btn {
+    background-color: $brown-color;
+    color: $white-color;
+}
+
+.btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.sign-google {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+// Header designs with icon (
+.title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+    
+.line {
+    height: 5px;
+    background-color: white;
+    width: 100%;
+}
+
+.circle {
+    border: 5px solid white;
+    border-radius: 50%;
+    width: $width-circle + px;
+    height: $width-circle + px;
+}
+
+.icon {
+    color: white;
+    width: ($width-circle - 10) + px;
+    font-size: ($width-circle - 10) + px;
+    height: ($width-circle - 10) + px;
+}
+// Header designs with icon )
+    
+
